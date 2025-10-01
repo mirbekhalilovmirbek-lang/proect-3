@@ -1,0 +1,15 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+.app.light {
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 1rem;
+}

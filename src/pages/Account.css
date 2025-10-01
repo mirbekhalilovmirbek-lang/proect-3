@@ -1,0 +1,291 @@
+.account {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #f1f5f9;
+  min-height: calc(100vh - 200px);
+  padding: 2rem 0;
+}
+
+.account.light {
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  color: #0f172a;
+}
+
+.account h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.account h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(135deg, #2563eb, #8b5cf6);
+  border-radius: 2px;
+}
+
+.account-content {
+  display: flex;
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.account-sidebar {
+  flex: 1;
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+}
+
+.account.light .account-sidebar {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.account-nav li {
+  margin-bottom: 1rem;
+}
+
+.account-nav a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #94a3b8;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.account.light .account-nav a {
+  color: #64748b;
+}
+
+.account-nav a:hover,
+.account-nav .active a {
+  background: rgba(37, 99, 235, 0.1);
+  color: #93c5fd;
+  transform: translateX(5px);
+}
+
+.account.light .account-nav a:hover,
+.account.light .account-nav .active a {
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+}
+
+.account-nav .active a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(135deg, #2563eb, #8b5cf6);
+  border-radius: 0 3px 3px 0;
+}
+
+.account-main {
+  flex: 3;
+}
+
+.account-dashboard {
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 16px;
+  padding: 2.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+}
+
+.account.light .account-dashboard {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.account-dashboard h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #93c5fd;
+}
+
+.account.light .account-dashboard h2 {
+  color: #2563eb;
+}
+
+.account-dashboard p {
+  color: #94a3b8;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.account.light .account-dashboard p {
+  color: #64748b;
+}
+
+.dashboard-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 16px;
+  padding: 2rem;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.account.light .stat-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.35);
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  color: #93c5fd;
+  margin-bottom: 0.5rem;
+}
+
+.account.light .stat-card h3 {
+  color: #2563eb;
+}
+
+.stat-card p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.account.light .stat-card p {
+  color: #64748b;
+}
+
+.recent-orders {
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+}
+
+.account.light .recent-orders {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.recent-orders h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #93c5fd;
+  font-size: 1.5rem;
+}
+
+.account.light .recent-orders h3 {
+  color: #2563eb;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.account.light table th,
+.account.light table td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table th {
+  background: rgba(15, 23, 42, 0.5);
+  font-weight: 600;
+  color: #93c5fd;
+}
+
+.account.light table th {
+  background: rgba(241, 245, 249, 0.8);
+  color: #2563eb;
+}
+
+.status {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status.delivered {
+  background: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+}
+
+.status.shipped {
+  background: rgba(52, 152, 219, 0.1);
+  color: #60a5fa;
+}
+
+.status.processing {
+  background: rgba(245, 158, 11, 0.1);
+  color: #fbbf24;
+}
+
+@media (max-width: 768px) {
+  .account-content {
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+  
+  .account-sidebar,
+  .account-dashboard,
+  .recent-orders {
+    padding: 1.5rem;
+  }
+  
+  .dashboard-stats {
+    flex-direction: column;
+  }
+  
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .account h1 {
+    font-size: 2.2rem;
+  }
+}
