@@ -14,7 +14,7 @@ const About = () => {
           <div className="about-section">
             <h2>{language === 'en' ? 'Our Story' : 'Наша история'}</h2>
             <p>
-              {language === 'en' 
+              {language === 'en'  
                 ? 'Founded in 2010, Laptop Store has been at the forefront of providing high-quality laptops and accessories to tech enthusiasts and professionals worldwide. Our journey began with a simple mission: to make cutting-edge technology accessible to everyone.' 
                 : 'Основанный в 2010 году, Магазин Ноутбуков находится на переднем крае предоставления высококачественных ноутбуков и аксессуаров для технологических энтузиастов и профессионалов по всему миру. Наш путь начался с простой миссии: сделать передовые технологии доступными для всех.'}
             </p>
